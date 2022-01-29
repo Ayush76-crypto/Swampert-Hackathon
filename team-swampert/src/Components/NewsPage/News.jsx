@@ -10,11 +10,11 @@ function News(props) {
 
   return (
     <div className="newsfeed">
-      <h2 className="head__text">Agriculture And Farmers Welfare News</h2>
+      <h1 className="head__text">Agriculture And Farmers Welfare News</h1>
       <div className="all__news">
         {data
           ? data.articles.map((news) => (
-              <Card data={news} key={news.url} />
+              <Card data={news} key={news._id} />
             ))
           : "Loading"}
       </div>
