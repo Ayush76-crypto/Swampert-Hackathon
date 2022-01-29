@@ -1,24 +1,15 @@
-import React, { Component } from "react";
+import React from "react";
 
-export default class Card extends Component {
-
-    render() {
-        return (
-
-            <div className="card mb-3" style={{ maxWidth: "540px" }} >
-                <div className="row g-0">
-                    <div className="col-md-4">
-                        <img src={this.props.obj.articles} className="img-fluid rounded-start" alt="..." />
-                    </div>
-                    <div className="col-md-8">
-                        <div className="card-body">
-                            <h5 className="card-title">{this.props.obj.title}</h5>
-                            <p className="card-text">{this.props.obj.summary}</p>
-                            <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        )
-    }
+function Card({ data }) {
+  return (
+    <div className="news">
+      <img src={data.media} className="news__image" alt="..." />
+      <h1 className="news__title">{data.title}</h1>
+      <span className="news__author">{data.author}</span> <br />
+      <span className="news__published">{data.published_date}</span>
+      <span className="news__source"><a href={data.link} className="weblink" target="_blank">Website Link</a></span>
+    </div>
+  );
 }
+
+export default Card;

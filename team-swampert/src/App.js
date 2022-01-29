@@ -1,12 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
-import News from './Components/NewsPage/News';
+import React from "react";
+import { NewsContextProvider } from "./Components/NewsPage/NewsContext";
+import News from "./Components/NewsPage/News";
 
 function App() {
   return (
-    <div className="App">
+    <NewsContextProvider>
       <News />
-    </div>
+    </NewsContextProvider>
   );
 }
 
