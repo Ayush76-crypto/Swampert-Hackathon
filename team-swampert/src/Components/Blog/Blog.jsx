@@ -25,9 +25,10 @@ function Blog() {
           adipiscing elit. Aenean fringilla congue aliquet.
         </div>
         <div className="mt-5">
+          <a href="/CreateBlog">
           <button className="bg-mint px-10 py-4 rounded-full shadow-lg">
             Create Post
-          </button>
+          </button></a>
         </div>
       </div>
       <div className="flex justify-left mt-10 ml-28">

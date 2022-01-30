@@ -1,4 +1,5 @@
-function createBlog() {
+import React from "react";
+function CreateBlog() {
   return (
     <div className="flex flex-col justify-center items-center bg-lime bg-rice bg-no-repeat bg-right-top bg-fixed h-screen scroll-smooth">
       <div className="font-bold mt-5 text-4xl">Blog Create</div>
@@ -12,4 +13,4 @@ function createBlog() {
   );
 }
 
-export default createBlog;
+export default CreateBlog;
