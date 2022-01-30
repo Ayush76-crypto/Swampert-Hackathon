@@ -82,6 +82,10 @@ function Homepage() {
 
       <BottomSection />
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> parent of 50d973f (updated)
     </div>
   );
 }
