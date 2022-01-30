@@ -1,7 +1,9 @@
-import React from "react";
+import React,{useContext} from "react";
+import { UserContext } from "../userContext/context";
 
 function Topsection() {
-  return (
+  const { user } = useContext(UserContext);
+
     <div className="divide-y divide-gray-600">
       {/* First Component */}
       <div className=" flex py-32 px-10 justify-around">
@@ -16,9 +18,10 @@ function Topsection() {
             we make sure that only reliable users gain access to our digital
             marketplace. There are two ways to get started.
           </p>
-          <button className="transition text-xl ease-in-out bg-custom-blue hover:bg-[#F38181] text-white duration-200 hover:-translate-y-1 font-bold py-4 px-10 rounded-full drop-shadow-xl">
-            Join Now
-          </button>
+          {user?.email ?   <h1 className="text-4xl"> <b>Welcome !!</b></h1> :
+          <button className="transition ease-in-out bg-custom-blue hover:bg-[#F38181] text-white duration-200 hover:-translate-y-1 font-bold py-4 px-7 			rounded-full drop-shadow-xl">
+            <a href="/SignUp" >Join Us</a>
+          </button>}
         </div>
         <img
           src={require("../assets/photos/Asset 1 1.svg").default}
