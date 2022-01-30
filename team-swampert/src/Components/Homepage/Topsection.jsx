@@ -16,7 +16,7 @@ function Topsection() {
             we make sure that only reliable users gain access to our digital
             marketplace. There are two ways to get started.
           </p>
-          <button className="transition ease-in-out bg-custom-blue hover:bg-[#F38181] text-white duration-200 hover:-translate-y-1 font-bold py-4 px-7 rounded-full drop-shadow-xl">
+          <button className="transition text-xl ease-in-out bg-custom-blue hover:bg-[#F38181] text-white duration-200 hover:-translate-y-1 font-bold py-4 px-10 rounded-full drop-shadow-xl">
             Join Now
           </button>
         </div>
