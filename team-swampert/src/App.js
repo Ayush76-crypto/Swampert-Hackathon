@@ -7,6 +7,7 @@ import AboutUs from "./Components/AboutUs";
 import Blog from "./Components/Blog/Blog";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
+import Marketplace from "./Components/Marketplace/Marketplace";
 
 
 function App() {
@@ -18,7 +19,7 @@ function App() {
           <Route exact path="/" element={<Homepage />} />
           <Route exact path="/About" element={<AboutUs />} />
           <Route exact path="/News" element={<NewsContextProvider><News /> </NewsContextProvider>} />
-          <Route exact path="/Marketplace" element={<Homepage />} />
+          <Route exact path="/Marketplace" element={<Marketplace />} />
           <Route exact path="/Blog" element={<Blog />} />
           <Route exact path="/Login" element={<Homepage />} />
         </Routes>
