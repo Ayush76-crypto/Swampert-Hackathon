@@ -1,3 +1,4 @@
+import React from "react";
 function Cards(props) {
   return (
     <div className="aspect-4/3 bg-white rounded-lg  shadow-lg   m-5">
