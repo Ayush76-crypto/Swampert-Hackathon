@@ -1,16 +1,13 @@
 import React from "react";
-import Navbar from "./Navbar";
-import Footer from "./Footer";
 
 function AboutUs() {
   return (
     <div className="bg-custom-bg">
-      <Navbar />
 
       {/* Main Components of About Us Page. */}
       <main className="divide-y divide-gray-600">
         {/* Our Vission Component */}
-        <div className="mt-20 py-2 text-center">
+        <div className="py-28 text-center">
           <h2 className="font-bold text-5xl">
             OUR <span className="text-[#F38181]">VISION</span>
           </h2>
@@ -24,7 +21,7 @@ function AboutUs() {
         </div>
 
         {/* Our Mission Component */}
-        <div className="mt-20 pt-20 text-center">
+        <div className="pt-20 text-center">
           <h2 className="font-bold text-5xl">
             OUR <span className="text-[#F38181]">MISSSION</span>
           </h2>
@@ -96,7 +93,6 @@ function AboutUs() {
         </div>
       </main>
 
-      <Footer />
     </div>
   );
 }
