@@ -1,14 +1,10 @@
 import React from "react";
-import Footer from "../Footer";
-import Navbar from "../Navbar";
 import BottomSection from "./BottomSection";
 import Topsection from "./Topsection";
 
 function Homepage() {
   return (
     <div className="bg-custom-bg divide-y divide-gray-600">
-
-      <Navbar />
 
       <Topsection />
 
@@ -86,7 +82,6 @@ function Homepage() {
 
       <BottomSection />
 
-      <Footer />
 
     </div>
   );
