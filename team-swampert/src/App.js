@@ -10,12 +10,15 @@ import Footer from "./Components/Footer";
 import Marketplace from "./Components/Marketplace/Marketplace";
 import Market from "./Components/Marketplace/Market";
 import CreateBlog from "./Components/Blog/createBlog";
-
+import Login from "./Components/Login/Login";
+import SignUp from "./Components/SignUp/Signup";
+import { UserContextProvider } from "./Components/userContext/context";
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
+      <UserContextProvider>
       <Navbar />
         <Routes>
           <Route exact path="/" element={<Homepage />} />
@@ -25,8 +28,10 @@ function App() {
           <Route exact path="/Market/*" element={<Market/>} />
           <Route exact path="/Blog" element={<Blog />} />
           <Route exact path="/CreateBlog" element={<CreateBlog />} />
-          <Route exact path="/Login" element={<Homepage />} />
+          <Route exact path="/Login" element={<Login />} />
+          <Route exact path="/SignUp" element={<SignUp />} />
         </Routes>
+      </UserContextProvider>
       </BrowserRouter>
       <Footer />
 
