@@ -5,7 +5,6 @@ import Topsection from "./Topsection";
 function Homepage() {
   return (
     <div className="bg-custom-bg divide-y divide-gray-600">
-
       <Topsection />
 
       {/* Third Component */}
@@ -81,11 +80,6 @@ function Homepage() {
       </div>
 
       <BottomSection />
-
-<<<<<<< HEAD
-=======
-
->>>>>>> parent of 50d973f (updated)
     </div>
   );
 }
