@@ -1,4 +1,4 @@
-# Swapert-Hackathon
+# SwampHacks - Hackathon
 
 Step 1 : Clone the github repository.
 
