@@ -5,12 +5,12 @@ import { auth } from "../fbcongif";
 import logo from './assets/photos/logo.png'
 
 function Navbar() {
-  return (
   const { user } = useContext(UserContext);
   const logout = async () => {
     await signOut(auth);
   };
   const links = user?.email ? <a href="/" onClick={logout} >Logout</a> : <a href="/Login" >Login</a> ;
+  return (
     <nav className="flex bg-black text-white h-20 items-center px-20 cursor-pointer">
       <img src={logo} alt="LOGO" style={{width:"100px",height:"100px"}}/>
       <ul className="cursor-pointer flex justify-end px-12 space-x-11 text-xl font-semibold ml-auto">

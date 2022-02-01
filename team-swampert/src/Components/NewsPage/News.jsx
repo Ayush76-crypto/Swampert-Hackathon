@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { NewsContext } from "./NewsContext";
-import Card from "./newscard";
+import Card from "./newscard.tsx";
 import "./news.css";
 
 

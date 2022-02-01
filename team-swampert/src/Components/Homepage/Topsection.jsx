@@ -2,8 +2,8 @@ import React,{useContext} from "react";
 import { UserContext } from "../userContext/context";
 
 function Topsection() {
-  return (
   const { user } = useContext(UserContext);
+  return (
 
     <div className="divide-y divide-gray-600">
       {/* First Component */}
